@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 	@GetMapping("/msg")
 	public String getMsg(@RequestParam Optional<String> name) {
-		return "Name :"+name.orElseGet(()->"Name is not Provided");
+		return " User Name :"+name.orElseGet(()->"Name is not Provided");
 		
 	}
 
